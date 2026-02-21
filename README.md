@@ -1,7 +1,4 @@
 <img src="https://edukvam.com/git/ifile/ifile.jpg" class="screenshot rounded-3xl shadow-2xl" alt="Screenshot 1">
-                <img src="https://edukvam.com/git/ifile/ifile2.jpg" class="screenshot rounded-3xl shadow-2xl" alt="Screenshot 2">
-                <img src="https://edukvam.com/git/ifile/ifile3.jpg" class="screenshot rounded-3xl shadow-2xl" alt="Screenshot 3">
-   
 
 # iFile PHP Mobile — Lightweight File Manager for Mobile
 
@@ -138,3 +135,9 @@ https://github.com/Ruslan-Bilohash/iFile
 ⭐ Поставь звезду, если понравилось!
 
 Автор: Ruslan Bilohash
+
+<img src="https://edukvam.com/git/ifile/ifile.jpg" class="screenshot rounded-3xl shadow-2xl" alt="Screenshot 1">
+
+ <img src="https://edukvam.com/git/ifile/ifile2.jpg" class="screenshot rounded-3xl shadow-2xl" alt="Screenshot 2">
+
+<img src="https://edukvam.com/git/ifile/ifile3.jpg" class="screenshot rounded-3xl shadow-2xl" alt="Screenshot 3">
