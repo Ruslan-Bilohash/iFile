@@ -380,11 +380,7 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
     <!-- ==================== УЛУЧШЕННАЯ АДАПТИВНАЯ ШАПКА ==================== -->
     <header class="fixed top-0 inset-x-0 bg-zinc-900 border-b border-zinc-700 z-50 safe-top">
         <div class="px-5 py-3 flex items-center justify-between">
-            <!-- Главная слева (большая удобная кнопка) -->
-            <button onclick="goHome()" class="flex items-center gap-2 text-blue-400 active:scale-95 transition">
-                <span class="material-symbols-outlined text-4xl">home</span>
-                <span class="font-medium text-lg"><?= t('home') ?></span>
-            </button>
+         
 
             <!-- Центр: название + версия -->
             <div class="text-center">
@@ -397,28 +393,13 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
 
             <!-- Правая часть -->
             <div class="flex items-center gap-5">
-                <!-- Язык -->
-                <select onchange="location='ifile.php?lang='+this.value" class="bg-zinc-800 border border-zinc-700 rounded-2xl px-4 py-2 text-lg">
-                    <option value="ru" <?= $lang=='ru'?'selected':'' ?>>🇷🇺</option>
-                    <option value="uk" <?= $lang=='uk'?'selected':'' ?>>🇺🇦</option>
-                    <option value="en" <?= $lang=='en'?'selected':'' ?>>🇬🇧</option>
-                    <option value="de" <?= $lang=='de'?'selected':'' ?>>🇩🇪</option>
-                    <option value="pl" <?= $lang=='pl'?'selected':'' ?>>🇵🇱</option>
-                    <option value="lt" <?= $lang=='lt'?'selected':'' ?>>🇱🇹</option>
-                    <option value="no" <?= $lang=='no'?'selected':'' ?>>🇳🇴</option>
-                    <option value="sv" <?= $lang=='sv'?'selected':'' ?>>🇸🇪</option>
-                    <option value="ka" <?= $lang=='ka'?'selected':'' ?>>🇬🇪</option>
-                </select>
+                
                 <!-- Выход -->
                 <a href="?logout=1" class="material-symbols-outlined text-4xl text-red-400 active:scale-95 transition"><?= t('logout') ?></a>
             </div>
         </div>
 
-        <!-- Вторая строка: путь + место -->
-        <div class="px-5 pb-3 text-xs flex justify-between items-center text-zinc-400 border-t border-zinc-800">
-            <div id="path" class="font-medium truncate max-w-[55%]">/</div>
-            <div><?= t('space') ?> <span class="text-white font-medium"><?= $used_percent ?>%</span> • <?= $used_gb ?> / <?= $total_gb ?> GiB</div>
-        </div>
+  
     </header>
 
     <div class="pt-28 px-4">
@@ -456,10 +437,32 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
         <button onclick="deleteSelected()" class="bg-red-600 hover:bg-red-500 px-8 py-5 rounded-3xl font-semibold flex-1">Удалить выбранное (<span id="selCount">0</span>)</button>
         <button onclick="toggleMultiSelect()" class="ml-4 text-zinc-400 font-medium px-6 py-5"><?= t('cancel') ?></button>
     </div>
+      <!-- Вторая строка: путь + место -->
 
+        <div class="px-5 pb-3 text-xs flex justify-between items-center text-zinc-400 border-t border-zinc-800">
+            <div id="path" class="font-medium truncate max-w-[55%]">/</div>
+			   <!-- Главная слева (большая удобная кнопка) -->
+            <button onclick="goHome()" class="flex items-center gap-2 text-blue-400 active:scale-95 transition">
+                <span class="material-symbols-outlined text-4xl">home</span>
+                <span class="font-medium text-lg"><?= t('home') ?></span>
+            </button>
+            <div><?= t('space') ?> <span class="text-white font-medium"><?= $used_percent ?>%</span> • <?= $used_gb ?> / <?= $total_gb ?> GiB</div>
+        </div>
     <!-- ФУТЕР с версией и ссылкой на GitHub -->
     <footer class="fixed bottom-0 inset-x-0 bg-zinc-900 border-t border-zinc-700 text-center py-3 text-xs text-zinc-500 safe-bottom">
         <?= t('footer') ?><a href="https://github.com/Ruslan-Bilohash/iFile" target="_blank" class="underline hover:text-white">GitHub</a>
+		<!-- Язык -->
+                <select onchange="location='ifile.php?lang='+this.value" class="bg-zinc-800 border border-zinc-700 rounded-2xl px-4 py-2 text-lg">
+                    <option value="ru" <?= $lang=='ru'?'selected':'' ?>>🇷🇺</option>
+                    <option value="uk" <?= $lang=='uk'?'selected':'' ?>>🇺🇦</option>
+                    <option value="en" <?= $lang=='en'?'selected':'' ?>>🇬🇧</option>
+                    <option value="de" <?= $lang=='de'?'selected':'' ?>>🇩🇪</option>
+                    <option value="pl" <?= $lang=='pl'?'selected':'' ?>>🇵🇱</option>
+                    <option value="lt" <?= $lang=='lt'?'selected':'' ?>>🇱🇹</option>
+                    <option value="no" <?= $lang=='no'?'selected':'' ?>>🇳🇴</option>
+                    <option value="sv" <?= $lang=='sv'?'selected':'' ?>>🇸🇪</option>
+                    <option value="ka" <?= $lang=='ka'?'selected':'' ?>>🇬🇪</option>
+                </select>
     </footer>
 
     <div id="toast"></div>
