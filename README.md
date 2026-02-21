@@ -1,5 +1,8 @@
 <img src="https://edukvam.com/git/ifile/ifile.jpg" class="screenshot rounded-3xl shadow-2xl" alt="Screenshot 1">
 
+WebSite: https://edukvam.com/git/ifile/index.php
+Demo: https://edukvam.com/git/ifile/ifile.php
+Password: 12345
 # iFile PHP Mobile — Lightweight File Manager for Mobile
 
 **Version 1.0 Multilang**
