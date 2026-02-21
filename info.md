@@ -1,6 +1,5 @@
 
-
-# [<img src="https://edukvam.com/git/ifile/screen.png" width="48" height="48" style="vertical-align:middle">](https://edukvam.com/git/ifile/ifile.jpg) iFile
+![Редактор](https://edukvam.com/git/ifile/ifile3.jpg)
 
 **Найкрасивіший і найпотужніший файловий менеджер для iPhone 16 Pro Max, Android та всіх пристроїв**
 
