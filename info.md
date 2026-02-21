@@ -1,6 +1,6 @@
 
 
-# <img src="https://edukvam.com/git/ifile/icon.png" width="48" height="48" style="vertical-align:middle"> iFile
+# <img src="https://edukvam.com/git/ifile/icon.png" width="48" height="48" style="vertical-align:middle"> iFile</img>
 
 **Найкрасивіший і найпотужніший файловий менеджер для iPhone 16 Pro Max, Android та всіх пристроїв**
 
