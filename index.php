@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 // ====================== 9 ЯЗЫКОВ ======================
 $translations = [
     'ru' => [
@@ -27,7 +26,8 @@ $translations = [
         'pasted' => '📋 Вставлено',
         'help_title' => 'Справка',
         'help_text' => "iFile — удобный файловый менеджер для iPhone 16 Pro Max и всех мобильных.\n\n• Нажми Главная — вернуться в корень\n• Нажми папку — открыть\n• Нажми файл — редактировать\n• Кнопка в шапке — множественный выбор",
-        'footer' => 'iFile v1.0 Multilang • '
+        'footer' => 'iFile v1.0 Multilang • ',
+        'back' => 'Назад'
     ],
     'uk' => [
         'app_name' => 'iFile',
@@ -53,7 +53,8 @@ $translations = [
         'pasted' => '📋 Вставлено',
         'help_title' => 'Довідка',
         'help_text' => "iFile — зручний файловий менеджер для iPhone.\n\n• Головна — повернутися в корінь\n• Натисни папку — відкрити\n• Натисни файл — редагувати",
-        'footer' => 'iFile v1.0 Multilang • '
+        'footer' => 'iFile v1.0 Multilang • ',
+        'back' => 'Назад'
     ],
     'en' => [
         'app_name' => 'iFile',
@@ -79,7 +80,8 @@ $translations = [
         'pasted' => '📋 Pasted',
         'help_title' => 'Help',
         'help_text' => "iFile — convenient file manager for iPhone 16 Pro Max.\n\n• Home button — go to root\n• Tap folder to open\n• Tap file to edit",
-        'footer' => 'iFile v1.0 Multilang • '
+        'footer' => 'iFile v1.0 Multilang • ',
+        'back' => 'Back'
     ],
     'de' => [
         'app_name' => 'iFile',
@@ -105,7 +107,8 @@ $translations = [
         'pasted' => '📋 Eingefügt',
         'help_title' => 'Hilfe',
         'help_text' => "iFile — bequemer Dateimanager für iPhone.\n\n• Home-Taste — zum Root\n• Ordner antippen\n• Datei antippen zum Bearbeiten",
-        'footer' => 'iFile v1.0 Multilang • '
+        'footer' => 'iFile v1.0 Multilang • ',
+        'back' => 'Zurück'
     ],
     'pl' => [
         'app_name' => 'iFile',
@@ -131,7 +134,8 @@ $translations = [
         'pasted' => '📋 Wklejono',
         'help_title' => 'Pomoc',
         'help_text' => "iFile — wygodny menedżer plików dla iPhone.\n\n• Przycisk Główna — powrót do root\n• Dotknij folderu\n• Dotknij pliku by edytować",
-        'footer' => 'iFile v1.0 Multilang • '
+        'footer' => 'iFile v1.0 Multilang • ',
+        'back' => 'Wstecz'
     ],
     'lt' => [
         'app_name' => 'iFile',
@@ -157,7 +161,8 @@ $translations = [
         'pasted' => '📋 Įklijuota',
         'help_title' => 'Pagalba',
         'help_text' => "iFile — patogus failų tvarkytuvas iPhone.\n\n• Mygtukas Pagrindinis — grįžti į šaknį\n• Bakstelėkite aplanką\n• Bakstelėkite failą redaguoti",
-        'footer' => 'iFile v1.0 Multilang • '
+        'footer' => 'iFile v1.0 Multilang • ',
+        'back' => 'Atgal'
     ],
     'no' => [
         'app_name' => 'iFile',
@@ -183,7 +188,8 @@ $translations = [
         'pasted' => '📋 Limt inn',
         'help_title' => 'Hjelp',
         'help_text' => "iFile — praktisk filbehandler for iPhone.\n\n• Hjem-knapp — tilbake til rot\n• Trykk på mappe\n• Trykk på fil for å redigere",
-        'footer' => 'iFile v1.0 Multilang • '
+        'footer' => 'iFile v1.0 Multilang • ',
+        'back' => 'Tilbake'
     ],
     'sv' => [
         'app_name' => 'iFile',
@@ -209,7 +215,8 @@ $translations = [
         'pasted' => '📋 Klistrat in',
         'help_title' => 'Hjälp',
         'help_text' => "iFile — bekväm filhanterare för iPhone.\n\n• Hem-knappen — tillbaka till rot\n• Tryck på mapp\n• Tryck på fil för att redigera",
-        'footer' => 'iFile v1.0 Multilang • '
+        'footer' => 'iFile v1.0 Multilang • ',
+        'back' => 'Tillbaka'
     ],
     'ka' => [
         'app_name' => 'iFile',
@@ -235,8 +242,22 @@ $translations = [
         'pasted' => '📋 ჩასმულია',
         'help_title' => 'დახმარება',
         'help_text' => "iFile — მოსახერხებელი ფაილების მმართველი iPhone-ისთვის.\n\n• ღილაკი მთავარი — დაბრუნდება ძირში\n• დააჭირეთ საქაღალდეს\n• დააჭირეთ ფაილს რედაქტირებისთვის",
-        'footer' => 'iFile v1.0 Multilang • '
+        'footer' => 'iFile v1.0 Multilang • ',
+        'back' => 'უკან'
     ]
+];
+
+// ====================== МОЇ ПОКРАЩЕННЯ ======================
+$languages = [
+    'ru' => ['flag' => '🇷🇺', 'name' => 'Русский'],
+    'uk' => ['flag' => '🇺🇦', 'name' => 'Українська'],
+    'en' => ['flag' => '🇬🇧', 'name' => 'English'],
+    'de' => ['flag' => '🇩🇪', 'name' => 'Deutsch'],
+    'pl' => ['flag' => '🇵🇱', 'name' => 'Polski'],
+    'lt' => ['flag' => '🇱🇹', 'name' => 'Lietuvių'],
+    'no' => ['flag' => '🇳🇴', 'name' => 'Norsk'],
+    'sv' => ['flag' => '🇸🇪', 'name' => 'Svenska'],
+    'ka' => ['flag' => '🇬🇪', 'name' => 'ქართული'],
 ];
 
 function t($key) {
@@ -244,17 +265,13 @@ function t($key) {
     $lang = $_SESSION['lang'] ?? 'ru';
     return $translations[$lang][$key] ?? $translations['ru'][$key] ?? $key;
 }
-
 // ====================== CSP ======================
 header("Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';");
-
 // ====================== ЛОГИН ======================
 $PASSWORD = "admin123"; // ← ИЗМЕНИ СРАЗУ!
 $TITLE = t('app_name');
-
 if (isset($_GET['logout'])) { session_destroy(); header("Location: ifile.php"); exit; }
 if (isset($_POST['login'])) { if ($_POST['password'] === $PASSWORD) $_SESSION['logged_in'] = true; }
-
 if (!isset($_SESSION['logged_in'])) {
     echo '<!DOCTYPE html><html lang="'.($_SESSION['lang']??'ru').'"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>'.t('login_title').'</title>';
     echo '<script src="https://cdn.tailwindcss.com"></script><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />';
@@ -265,11 +282,9 @@ if (!isset($_SESSION['logged_in'])) {
     echo '<button type="submit" name="login" class="mt-6 w-full bg-blue-600 hover:bg-blue-500 active:scale-95 py-6 rounded-3xl text-2xl font-semibold">'.t('open_manager').'</button></form></div></body></html>';
     exit;
 }
-
 // ====================== ЯЗЫК ======================
 if (isset($_GET['lang'])) { $_SESSION['lang'] = $_GET['lang']; header("Location: ifile.php"); exit; }
 $lang = $_SESSION['lang'] ?? 'ru';
-
 // ====================== AJAX ======================
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     header('Content-Type: application/json');
@@ -348,7 +363,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     }
     exit;
 }
-
 // ====================== DISK USAGE ======================
 $total_space = disk_total_space(__DIR__);
 $free_space = disk_free_space(__DIR__);
@@ -376,12 +390,10 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
     </style>
 </head>
 <body class="bg-zinc-950 text-zinc-100 min-h-screen pb-20">
-
     <!-- ==================== УЛУЧШЕННАЯ АДАПТИВНАЯ ШАПКА ==================== -->
     <header class="fixed top-0 inset-x-0 bg-zinc-900 border-b border-zinc-700 z-50 safe-top">
         <div class="px-5 py-3 flex items-center justify-between">
-         
-
+        
             <!-- Центр: название + версия -->
             <div class="text-center">
                 <div class="font-bold text-2xl tracking-tighter flex items-center justify-center gap-2">
@@ -390,18 +402,15 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
                 </div>
                 <div class="text-[10px] text-zinc-500 -mt-1">v<?= t('version') ?> Multilang</div>
             </div>
-
             <!-- Правая часть -->
             <div class="flex items-center gap-5">
-                
+               
                 <!-- Выход -->
                 <a href="?logout=1" class="material-symbols-outlined text-4xl text-red-400 active:scale-95 transition"><?= t('logout') ?></a>
             </div>
         </div>
-
-  
+ 
     </header>
-
     <div class="pt-28 px-4">
         <!-- Кнопки создания -->
         <div class="flex gap-3 mb-6">
@@ -414,7 +423,6 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
         </div>
         <div id="grid" class="flex flex-col"></div>
     </div>
-
     <!-- РЕДАКТОР -->
     <div id="editorModal" class="hidden fixed inset-0 bg-zinc-950 z-[999] flex flex-col">
         <div class="bg-zinc-900 border-b border-zinc-700 px-5 py-4 flex items-center justify-between">
@@ -431,17 +439,15 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
         </div>
         <textarea id="editorTA" spellcheck="false" class="flex-1"></textarea>
     </div>
-
     <!-- Множественный выбор -->
     <div id="multiBar" class="hidden fixed bottom-0 inset-x-0 bg-zinc-900 border-t border-zinc-700 p-4 flex items-center justify-between z-[100] safe-bottom">
-        <button onclick="deleteSelected()" class="bg-red-600 hover:bg-red-500 px-8 py-5 rounded-3xl font-semibold flex-1">Удалить выбранное (<span id="selCount">0</span>)</button>
+        <button onclick="deleteSelected()" class="bg-red-600 hover:bg-red-500 px-8 py-5 rounded-3xl font-semibold flex-1">Видалити вибране (<span id="selCount">0</span>)</button>
         <button onclick="toggleMultiSelect()" class="ml-4 text-zinc-400 font-medium px-6 py-5"><?= t('cancel') ?></button>
     </div>
       <!-- Вторая строка: путь + место -->
-
         <div class="px-5 pb-3 text-xs flex justify-between items-center text-zinc-400 border-t border-zinc-800">
             <div id="path" class="font-medium truncate max-w-[55%]">/</div>
-			   <!-- Главная слева (большая удобная кнопка) -->
+   <!-- Главная слева (большая удобная кнопка) -->
             <button onclick="goHome()" class="flex items-center gap-2 text-blue-400 active:scale-95 transition">
                 <span class="material-symbols-outlined text-4xl">home</span>
                 <span class="font-medium text-lg"><?= t('home') ?></span>
@@ -449,30 +455,26 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
             <div><?= t('space') ?> <span class="text-white font-medium"><?= $used_percent ?>%</span> • <?= $used_gb ?> / <?= $total_gb ?> GiB</div>
         </div>
     <!-- ФУТЕР с версией и ссылкой на GitHub -->
-    <footer class="fixed bottom-0 inset-x-0 bg-zinc-900 border-t border-zinc-700 text-center py-3 text-xs text-zinc-500 safe-bottom">
-        <?= t('footer') ?><a href="https://github.com/Ruslan-Bilohash/iFile" target="_blank" class="underline hover:text-white">GitHub</a>
-		<!-- Язык -->
-                <select onchange="location='ifile.php?lang='+this.value" class="bg-zinc-800 border border-zinc-700 rounded-2xl px-4 py-2 text-lg">
-                    <option value="ru" <?= $lang=='ru'?'selected':'' ?>>🇷🇺</option>
-                    <option value="uk" <?= $lang=='uk'?'selected':'' ?>>🇺🇦</option>
-                    <option value="en" <?= $lang=='en'?'selected':'' ?>>🇬🇧</option>
-                    <option value="de" <?= $lang=='de'?'selected':'' ?>>🇩🇪</option>
-                    <option value="pl" <?= $lang=='pl'?'selected':'' ?>>🇵🇱</option>
-                    <option value="lt" <?= $lang=='lt'?'selected':'' ?>>🇱🇹</option>
-                    <option value="no" <?= $lang=='no'?'selected':'' ?>>🇳🇴</option>
-                    <option value="sv" <?= $lang=='sv'?'selected':'' ?>>🇸🇪</option>
-                    <option value="ka" <?= $lang=='ka'?'selected':'' ?>>🇬🇪</option>
-                </select>
+    <footer class="fixed bottom-0 inset-x-0 bg-zinc-900 border-t border-zinc-700 text-center py-3 text-xs text-zinc-500 safe-bottom flex items-center justify-between px-5">
+        <div><?= t('footer') ?><a href="https://github.com/Ruslan-Bilohash/iFile" target="_blank" class="underline hover:text-white">GitHub</a></div>
+        
+        <!-- ПОКРАЩЕНИЙ ВИБІР МОВИ З КРАЇНОЮ ТА ПРАПОРОМ -->
+        <select onchange="location='ifile.php?lang='+this.value" class="bg-zinc-800 border border-zinc-700 rounded-2xl px-4 py-2 text-lg font-medium">
+            <?php foreach($languages as $code => $l): ?>
+                <option value="<?= $code ?>" <?= $lang==$code?'selected':'' ?>><?= $l['flag'] ?> <?= $l['name'] ?></option>
+            <?php endforeach; ?>
+        </select>
     </footer>
-
     <div id="toast"></div>
-
     <script>
         let currentPath = "";
         let editingFile = "";
         let multiMode = false;
         let selected = new Set();
         let currentTA = null;
+        
+        // === ПОКРАЩЕННЯ: текст "Назад" з перекладом ===
+        const backText = "<?= addslashes(t('back')) ?>";
 
         async function api(action, extra = {}) {
             const fd = new FormData();
@@ -482,14 +484,12 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
             const res = await fetch(window.location.href, {method: 'POST', body: fd});
             return res.json();
         }
-
         function getFileVisual(item) {
             if (item.dir) return {icon: 'folder', color: 'text-amber-400', badge: ''};
             const ext = item.ext;
             const map = {'php': {icon: 'php', color: 'text-purple-500', badge: 'PHP'}, 'js': {icon: 'javascript', color: 'text-yellow-400', badge: 'JS'}, 'html': {icon: 'html', color: 'text-orange-400', badge: 'HTML'}, 'css': {icon: 'css', color: 'text-blue-400', badge: 'CSS'}, 'json': {icon: 'data_object', color: 'text-emerald-400', badge: 'JSON'}, 'sql': {icon: 'database', color: 'text-pink-400', badge: 'SQL'}, 'txt': {icon: 'description', color: 'text-zinc-400', badge: 'TXT'}};
             return map[ext] || {icon: 'insert_drive_file', color: 'text-sky-400', badge: ext.toUpperCase() || 'FILE'};
         }
-
         function showToast(msg) {
             const t = document.getElementById('toast');
             t.textContent = msg;
@@ -497,12 +497,39 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
             t.style.opacity = '1';
             setTimeout(() => t.style.opacity = '0', 2200);
         }
-
+        
+        // === НОВА ФУНКЦІЯ: кнопка Назад ===
+        function goBack() {
+            if (!currentPath) return;
+            const parts = currentPath.split('/').filter(p => p.length > 0);
+            parts.pop();
+            currentPath = parts.join('/');
+            loadFiles();
+        }
+        
         async function loadFiles() {
             document.getElementById('path').textContent = currentPath ? '/' + currentPath : '/';
             const data = await api('list');
             const grid = document.getElementById('grid');
             grid.innerHTML = '';
+            
+            // === КНОПКА НАЗАД ЯК ПЕРШИЙ ЕЛЕМЕНТ (якщо не в корені) ===
+            if (currentPath) {
+                const backRow = document.createElement('div');
+                backRow.className = `list-item`;
+                backRow.innerHTML = `
+                    <span class="material-symbols-outlined text-blue-400 text-[46px] flex-shrink-0">arrow_back</span>
+                    <div class="flex-1 min-w-0 px-4">
+                        <p class="font-medium text-[16.5px] leading-tight text-blue-400">.. ${backText}</p>
+                    </div>
+                `;
+                backRow.onclick = (e) => {
+                    if (multiMode) return;
+                    goBack();
+                };
+                grid.appendChild(backRow);
+            }
+            
             data.items.forEach(item => {
                 const vis = getFileVisual(item);
                 const row = document.createElement('div');
@@ -534,29 +561,26 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
                 grid.appendChild(row);
             });
         }
-
         function toggleMultiSelect() {
             multiMode = !multiMode;
             selected.clear();
             document.getElementById('multiBar').classList.toggle('hidden', !multiMode);
             loadFiles();
         }
-
         function toggleSelect(cb) {
             const name = cb.dataset.name;
             if (cb.checked) selected.add(name); else selected.delete(name);
             document.getElementById('selCount').textContent = selected.size;
         }
-
         function deleteSelected() {
             if (selected.size === 0) return;
-            if (!confirm(`Удалить ${selected.size} файлов?`)) return;
+            if (!confirm(`Видалити ${selected.size} файлів?`)) return;
             let done = 0;
             selected.forEach(name => {
                 api('delete', {name}).then(() => {
                     done++;
                     if (done === selected.size) {
-                        showToast(`${selected.size} файлов ${t('deleted')}`);
+                        showToast(`${selected.size} файлів видалено`);
                         selected.clear();
                         toggleMultiSelect();
                         loadFiles();
@@ -564,7 +588,6 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
                 });
             });
         }
-
         async function openEditor(filename) {
             editingFile = currentPath ? currentPath + '/' + filename : filename;
             const data = await api('getfile', {relpath: editingFile});
@@ -574,18 +597,15 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
             currentTA.value = data.content || '';
             currentTA.focus();
         }
-
         function closeEditor() {
             document.getElementById('editorModal').classList.add('hidden');
         }
-
         async function saveEditor() {
             if (!currentTA) return;
             const res = await api('save', {relpath: editingFile, content: currentTA.value});
             if (res.success) showToast(t('file_saved'));
-            else showToast("❌ " + (res.msg || 'Ошибка'));
+            else showToast("❌ " + (res.msg || 'Помилка'));
         }
-
         function selectAllEditor() { if (currentTA) { currentTA.select(); showToast(t('select_all')); }}
         function copyEditor() { if (currentTA) { navigator.clipboard.writeText(currentTA.value); showToast(t('copied')); }}
         function cutEditor() { if (currentTA) { navigator.clipboard.writeText(currentTA.value); currentTA.value = ''; showToast(t('cut_text')); }}
@@ -598,13 +618,12 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
                 showToast(t('pasted'));
             }
         }
-
         function newFolder() {
-            const name = prompt("Название новой папки:");
+            const name = prompt("Назва нової папки:");
             if (name) api('mkdir', {name}).then(() => loadFiles());
         }
         function newFile() {
-            const name = prompt("Имя нового файла (с расширением):");
+            const name = prompt("Ім'я нового файлу (з розширенням):");
             if (name) api('mkfile', {name}).then(() => loadFiles());
         }
         function uploadFiles() {
@@ -618,7 +637,7 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
                 for (let file of input.files) fd.append('files[]', file);
                 const res = await fetch(window.location.href, {method:'POST', body: fd});
                 if (res.ok) {
-                    showToast(`✅ Загружено ${input.files.length} файлов`);
+                    showToast(`✅ Завантажено ${input.files.length} файлів`);
                     loadFiles();
                 }
             };
@@ -628,7 +647,6 @@ $total_gb = round($total_space / 1024 / 1024 / 1024, 2);
             currentPath = "";
             loadFiles();
         }
-
         // Запуск
         loadFiles();
     </script>
