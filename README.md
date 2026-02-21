@@ -1,6 +1,7 @@
-Here is your text translated into **English, Norwegian (Bokmål), and Ukrainian** in one file format:
-
----
+<img src="https://edukvam.com/git/ifile/ifile.jpg" class="screenshot rounded-3xl shadow-2xl" alt="Screenshot 1">
+                <img src="https://edukvam.com/git/ifile/ifile2.jpg" class="screenshot rounded-3xl shadow-2xl" alt="Screenshot 2">
+                <img src="https://edukvam.com/git/ifile/ifile3.jpg" class="screenshot rounded-3xl shadow-2xl" alt="Screenshot 3">
+   
 
 # iFile PHP Mobile — Lightweight File Manager for Mobile
 
