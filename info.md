@@ -1,5 +1,5 @@
 
-![Редактор](https://edukvam.com/git/ifile/ifile3.jpg)
+![Редактор](https://edukvam.com/git/ifile/ifile1.jpg)
 
 **Найкрасивіший і найпотужніший файловий менеджер для iPhone 16 Pro Max, Android та всіх пристроїв**
 
