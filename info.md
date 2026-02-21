@@ -1,4 +1,4 @@
-<div align="center">
+
 
 # <img src="https://edukvam.com/git/ifile/icon.png" width="48" height="48" style="vertical-align:middle"> iFile
 
@@ -12,7 +12,7 @@
 
 ![Demo](https://img.shields.io/badge/ДЕМО-онлайн-00C853?style=for-the-badge&logo=google-chrome)
 
-</div>
+
 
 ---
 
