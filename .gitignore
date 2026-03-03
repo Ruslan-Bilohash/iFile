@@ -1,0 +1,55 @@
+# ================================================
+# .gitignore — максимальная защита PHP-проекта 2026
+# index.php полностью спрятан от публичного GitHub
+# ================================================
+
+# === Главный файл, который прячем ===
+index.php
+
+# Если в подпапке:
+# public/index.php
+# www/index.php
+# site/index.php
+# htdocs/index.php
+
+# === Все секреты и конфиги ===
+.env
+.env.*
+config.php
+config.local.php
+settings.php
+database.php
+includes/config.php
+config/*.php
+*.sql
+*.sql.gz
+
+# === Логи, кэш, временные файлы ===
+*.log
+log/
+logs/
+cache/
+tmp/
+temp/
+storage/
+
+# === Зависимости ===
+vendor/
+node_modules/
+
+# === IDE и системный мусор ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.bak
+*.backup
+
+# ================================================
+# ПУБЛИЧНЫЕ ФАЙЛЫ (видны всем):
+# ================================================
+!README.md
+!demo.index.php
+!*.example
+!*.example.php
+!.gitignore
